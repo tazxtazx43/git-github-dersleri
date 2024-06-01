@@ -1,5 +1,5 @@
 # git-github-desleri
-## Bu alt başlık benim bilgisayarımdan değiştirilmedi.
+## Kaynak : https://github.com/girliemac/a-picture-is-worth-a-1000-words/blob/main/algorithms/README.md
 
 # Algorithms / Data Structures
 
