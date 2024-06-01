@@ -1,19 +1,64 @@
 <html>
 
 <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hesap Makinesi Ödevi</title>
+	    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"] {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #sonuc {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
-	<input type="text" id="sayi1" />
-	<input type="text" id="sayi2" />
-
-	<button onclick="topla()">Topla</button>
-	<button onclick="cikar()">Çıkar</button>
-	<button onclick="carp()">Çarp</button>
-	<button onclick="bol()">Böl</button>
-
-	<h4 id="sonuc"></h4>
+    <div class="calculator">
+        <h1>Hesap Makinesi</h1>
+        <input type="text" id="sayi1" placeholder="Birinci Sayı" />
+        <input type="text" id="sayi2" placeholder="İkinci Sayı" />
+        <br>
+        <button onclick="topla()">Topla</button>
+        <button onclick="cikar()">Çıkar</button>
+        <button onclick="carp()">Çarp</button>
+        <button onclick="bol()">Böl</button>
+        <h4 id="sonuc"></h4>
+    </div>
 	<script src="toplama.js"></script>	
 	<script src="cikarma.js"></script>
 	<script src="carpma.js"></script>
